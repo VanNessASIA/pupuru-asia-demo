@@ -16,15 +16,23 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#" class="logo">
-        <!-- PLACEHOLDER: Replace with actual pupuru asia logo SVG/PNG -->
+        <!-- Replace with actual pupuru asia logo -->
         <span class="logo__text">pupuru <span class="logo__accent">asia</span></span>
       </a>
       <nav class="nav" id="nav">
         <ul class="nav__list">
           <li><a href="#services" class="nav__link">サービス</a></li>
+          <li><a href="#proposal" class="nav__link">改善提案</a></li>
           <li><a href="#strengths" class="nav__link">強み</a></li>
           <li><a href="#cases" class="nav__link">導入事例</a></li>
           <li><a href="#company" class="nav__link">会社概要</a></li>
+          <li class="nav__lang-switch">
+            <a href="#" class="nav__lang active" data-lang="ja">JP</a>
+            <span>/</span>
+            <a href="#" class="nav__lang" data-lang="en">EN</a>
+            <span>/</span>
+            <a href="#" class="nav__lang nav__lang--soon" data-lang="th" title="近日公開">TH</a>
+          </li>
           <li><a href="#contact" class="nav__link nav__link--cta">お問い合わせ</a></li>
         </ul>
       </nav>
@@ -37,8 +45,13 @@
   <!-- ========== HERO ========== -->
   <section class="hero" id="home">
     <div class="hero__bg">
-      <!-- PLACEHOLDER: hero background — recommend a high-res photo of Asian cityscape
-           or abstract network/connectivity image. Current: CSS gradient fallback. -->
+      <!--
+        ASSET SLOT: hero-bg.jpg
+        Place file at: /pupuru-assets/hero-bg.jpg (or .webp)
+        Recommended: high-res Asian cityscape or abstract network/connectivity photo (1920×1080+)
+        Fallback: CSS gradient is active below.
+        Wire-in: add style="background-image: url('../pupuru-assets/hero-bg.jpg')" to .hero__bg once file is ready.
+      -->
       <div class="hero__overlay"></div>
     </div>
     <div class="container hero__content">
@@ -82,7 +95,7 @@
     <div class="container">
       <p class="trustbar__label">導入企業（例）</p>
       <div class="trustbar__logos">
-        <!-- PLACEHOLDER: Replace with actual client logos (grayscale PNGs recommended) -->
+        <!-- PLACEHOLDER: Replace with actual client logos (grayscale PNGs, ~200×60px) -->
         <div class="trustbar__logo-item">Logo A</div>
         <div class="trustbar__logo-item">Logo B</div>
         <div class="trustbar__logo-item">Logo C</div>
@@ -98,7 +111,7 @@
       <div class="section-header">
         <p class="section-header__eyebrow">Services</p>
         <h2 class="section-header__title">提供サービス</h2>
-        <p class="section-header__sub">アジアでのビジネス展開を支える、２つのコアソリューション</p>
+        <p class="section-header__sub">通信とVR——２つの柱でアジアビジネスを完全支援</p>
       </div>
 
       <div class="services__grid">
@@ -153,6 +166,122 @@
         </div>
 
       </div>
+
+      <!-- Multilingual note -->
+      <div class="services__multilang-note">
+        <p>🌐 本サービスは <strong>日本語・英語・タイ語</strong> に対応。多言語サイトは順次公開予定です。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROPOSAL / DIFF SECTION ========== -->
+  <section class="section proposal" id="proposal">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__eyebrow">Proposal</p>
+        <h2 class="section-header__title">現状の課題と改善提案</h2>
+        <p class="section-header__sub">現行サイトの分析をもとに、今回のリニューアルで解決する課題と変更内容を整理しました</p>
+      </div>
+
+      <div class="proposal__grid">
+
+        <!-- Issue 1 -->
+        <div class="proposal-item proposal-item--issue">
+          <div class="proposal-item__badge">現状の課題</div>
+          <h3 class="proposal-item__title">①VRが通信の「おまけ」に見える</h3>
+          <p class="proposal-item__body">
+            現行サイトでは通信ソリューションが前面に出ており、VRは補足サービスのように扱われています。
+            B2Bの意思決定者がVRの独立した事業価値に気づきにくい構造です。
+          </p>
+          <div class="proposal-diff">
+            <div class="diff-before">
+              <span class="diff-label">Before</span>
+              通信主体のページ構成。VRは下部に掲載。
+            </div>
+            <div class="diff-arrow">→</div>
+            <div class="diff-after">
+              <span class="diff-label">After</span>
+              通信とVRを対等な２カラムで並置。ヒーローコピーでも両方を明示。
+            </div>
+          </div>
+        </div>
+
+        <!-- Issue 2 -->
+        <div class="proposal-item proposal-item--issue">
+          <div class="proposal-item__badge">現状の課題</div>
+          <h3 class="proposal-item__title">②日本語のみで海外顧客へのリーチが限定的</h3>
+          <p class="proposal-item__body">
+            アジア各国の現地パートナーや外資系企業への営業では、英語・タイ語コンテンツが必要です。
+            現行サイトは日本語のみで、グローバルリーチが不足しています。
+          </p>
+          <div class="proposal-diff">
+            <div class="diff-before">
+              <span class="diff-label">Before</span>
+              日本語のみ。言語切替なし。
+            </div>
+            <div class="diff-arrow">→</div>
+            <div class="diff-after">
+              <span class="diff-label">After</span>
+              ヘッダーにJP/EN/TH切替を設置。多言語ページを段階的に公開予定。
+            </div>
+          </div>
+        </div>
+
+        <!-- Issue 3 -->
+        <div class="proposal-item proposal-item--issue">
+          <div class="proposal-item__badge">現状の課題</div>
+          <h3 class="proposal-item__title">③導入事例が抽象的でコンバージョンに弱い</h3>
+          <p class="proposal-item__body">
+            「導入しました」という説明が多く、具体的な数値成果や業界別の事例が不足しています。
+            訪問者が「自社に当てはまる」と感じにくい構成です。
+          </p>
+          <div class="proposal-diff">
+            <div class="diff-before">
+              <span class="diff-label">Before</span>
+              サービス紹介テキストのみ。業界・数値成果が不明瞭。
+            </div>
+            <div class="diff-arrow">→</div>
+            <div class="diff-after">
+              <span class="diff-label">After</span>
+              業界タグ・KPI数値・画像を組み合わせたカード型事例を掲載。
+            </div>
+          </div>
+        </div>
+
+        <!-- Issue 4 -->
+        <div class="proposal-item proposal-item--issue">
+          <div class="proposal-item__badge">現状の課題</div>
+          <h3 class="proposal-item__title">④スマートフォン体験が最適化されていない</h3>
+          <p class="proposal-item__body">
+            アジア市場ではスマートフォンが主要なアクセス手段。現行サイトはレスポンシブ対応が不完全で、
+            モバイルでの読みやすさとCTA誘導に改善余地があります。
+          </p>
+          <div class="proposal-diff">
+            <div class="diff-before">
+              <span class="diff-label">Before</span>
+              PC基準のレイアウト。モバイルで文字が小さく、CTAが見えにくい。
+            </div>
+            <div class="diff-arrow">→</div>
+            <div class="diff-after">
+              <span class="diff-label">After</span>
+              モバイルファーストのCSS設計。ハンバーガーメニュー・大型CTAボタンを実装。
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Why these changes -->
+      <div class="proposal__rationale">
+        <h3 class="proposal__rationale-title">なぜこの変更が必要か</h3>
+        <p>
+          pupuru asiaのターゲットは、アジアに拠点を持つ日系企業の事業責任者および現地IT担当者です。
+          彼らは「通信とVRを一社でまかせられる信頼できるパートナー」を求めています。
+          今回のリニューアルでは、<strong>2つのサービスを対等な柱として見せ</strong>、
+          <strong>具体的な成果数値で信頼を獲得</strong>し、<strong>多言語対応で商圏を拡大</strong>することを狙います。
+          Cloudflare Pagesへの静的デプロイにより、高速配信とグローバルCDNの恩恵も得られます。
+        </p>
+      </div>
     </div>
   </section>
 
@@ -176,8 +305,8 @@
         </div>
         <div class="strength-item">
           <div class="strength-item__num">03</div>
-          <h3 class="strength-item__title">日本語×英語×タイ語対応</h3>
-          <p class="strength-item__desc">日系企業のアジア展開に特化したバイリンガルチームが対応。日本本社と現地担当の橋渡し役として機能します。</p>
+          <h3 class="strength-item__title">日本語・英語・タイ語 完全対応</h3>
+          <p class="strength-item__desc">日系企業のアジア展開に特化したトリリンガルチームが対応。日本本社と現地担当の橋渡し役として機能します。<br><small class="coming-soon">※多言語サイト順次公開予定</small></p>
         </div>
       </div>
     </div>
@@ -194,11 +323,17 @@
       <div class="cases__grid">
 
         <article class="case-card">
-          <!-- PLACEHOLDER: case image — recommend 600×400px photo of manufacturing/factory -->
+          <!--
+            ASSET SLOT: case-mfg.jpg
+            Place file at: /pupuru-assets/case-mfg.jpg
+            Recommended: 600×400px, manufacturing/factory scene in Asia
+            Wire-in: replace .case-card__img--mfg placeholder background with background-image url
+          -->
           <div class="case-card__img case-card__img--mfg">
             <span class="case-card__img-label">📷 製造業イメージ（要差し替え）</span>
           </div>
           <div class="case-card__body">
+            <span class="case-card__tag case-card__tag--vr">VR</span>
             <span class="case-card__tag">製造業</span>
             <h3 class="case-card__title">タイ工場でのVR安全教育導入</h3>
             <p class="case-card__desc">従来の座学研修をVRに置き換え、教育時間を40%削減。事故率の大幅低下と多言語対応も実現。</p>
@@ -209,11 +344,16 @@
         </article>
 
         <article class="case-card">
-          <!-- PLACEHOLDER: case image — recommend 600×400px photo of retail/showroom -->
+          <!--
+            ASSET SLOT: case-retail.jpg
+            Place file at: /pupuru-assets/case-retail.jpg
+            Recommended: 600×400px, modern showroom or retail space
+          -->
           <div class="case-card__img case-card__img--retail">
             <span class="case-card__img-label">📷 小売業イメージ（要差し替え）</span>
           </div>
           <div class="case-card__body">
+            <span class="case-card__tag case-card__tag--vr">VR</span>
             <span class="case-card__tag">小売・不動産</span>
             <h3 class="case-card__title">バーチャルショールームで商談効率化</h3>
             <p class="case-card__desc">海外バイヤーが来訪不要でVR内覧。商談リードタイム短縮と海外顧客獲得率の向上を同時達成。</p>
@@ -224,11 +364,16 @@
         </article>
 
         <article class="case-card">
-          <!-- PLACEHOLDER: case image — recommend 600×400px photo of office/corporate -->
+          <!--
+            ASSET SLOT: case-corp.jpg
+            Place file at: /pupuru-assets/case-corp.jpg
+            Recommended: 600×400px, modern office or Asian business district
+          -->
           <div class="case-card__img case-card__img--corp">
             <span class="case-card__img-label">📷 企業イメージ（要差し替え）</span>
           </div>
           <div class="case-card__body">
+            <span class="case-card__tag case-card__tag--comm">通信</span>
             <span class="case-card__tag">商社・多拠点管理</span>
             <h3 class="case-card__title">アジア5拠点の通信を一元管理</h3>
             <p class="case-card__desc">バラバラだったSIM・回線契約をpupuru asiaで統合。コスト可視化と一括管理により通信費を30%圧縮。</p>
@@ -242,7 +387,39 @@
     </div>
   </section>
 
-  <!-- ========== COMPANY CTA ========== -->
+  <!-- ========== MULTILINGUAL ROADMAP ========== -->
+  <section class="section multilang" id="multilang">
+    <div class="container">
+      <div class="multilang__inner">
+        <div class="multilang__icon">🌐</div>
+        <div class="multilang__body">
+          <h2 class="multilang__title">多言語対応ロードマップ</h2>
+          <p class="multilang__desc">
+            pupuru asiaはアジア全域のビジネスパートナーに向け、サイトの多言語展開を進めています。
+          </p>
+          <div class="multilang__langs">
+            <div class="multilang__lang multilang__lang--active">
+              <span class="multilang__lang-flag">🇯🇵</span>
+              <strong>日本語</strong>
+              <span class="multilang__lang-status multilang__lang-status--live">公開中</span>
+            </div>
+            <div class="multilang__lang multilang__lang--active">
+              <span class="multilang__lang-flag">🇬🇧</span>
+              <strong>English</strong>
+              <span class="multilang__lang-status multilang__lang-status--live">公開中</span>
+            </div>
+            <div class="multilang__lang">
+              <span class="multilang__lang-flag">🇹🇭</span>
+              <strong>ภาษาไทย</strong>
+              <span class="multilang__lang-status multilang__lang-status--soon">近日公開</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMPANY ========== -->
   <section class="section company" id="company">
     <div class="container">
       <div class="company__inner">
@@ -261,10 +438,16 @@
             <dd><!-- PLACEHOLDER: 設立年月 --></dd>
             <dt>事業内容</dt>
             <dd>通信ソリューション、VRビジネスソリューション、アジア法人向けITサポート</dd>
+            <dt>対応言語</dt>
+            <dd>日本語・English・ภาษาไทย（タイ語）</dd>
           </dl>
         </div>
         <div class="company__map">
-          <!-- PLACEHOLDER: Map embed or illustrated Asia coverage map -->
+          <!--
+            ASSET SLOT: asia-map.png or asia-map.svg
+            Place file at: /pupuru-assets/asia-map.png
+            Recommended: SVG/PNG illustration of Asia with coverage pins
+          -->
           <div class="company__map-placeholder">
             <div class="map-mock">
               <div class="map-mock__label">🗺 アジアカバレッジマップ（要差し替え）</div>
@@ -327,7 +510,7 @@
             <textarea id="message" name="message" required rows="5" placeholder="ご相談内容をご記入ください…"></textarea>
           </div>
           <div class="form-group form-group--submit">
-            <!-- PLACEHOLDER: フォーム送信先はバックエンドまたはFormspree等に接続してください -->
+            <!-- PLACEHOLDER: フォーム送信先はFormspree / Cloudflare Workers等に接続してください -->
             <button type="submit" class="btn btn--primary btn--lg">送信する</button>
             <p class="form-note">※ 通常2営業日以内にご返信いたします。</p>
           </div>
@@ -337,7 +520,7 @@
             <h3>直接のお問い合わせ</h3>
             <p><!-- PLACEHOLDER: 電話番号 --><strong>TEL:</strong> 00-0000-0000</p>
             <p><!-- PLACEHOLDER: メールアドレス --><strong>Email:</strong> info@pupuruasia.com</p>
-            <p class="contact__hours">受付時間：平日 9:00〜18:00（タイ時間）</p>
+            <p class="contact__hours">受付時間：平日 9:00〜18:00（タイ時間 UTC+7）</p>
           </div>
           <div class="contact__sns">
             <h3>SNS・LINE</h3>
@@ -362,12 +545,19 @@
       <nav class="footer__nav">
         <ul>
           <li><a href="#services">サービス</a></li>
+          <li><a href="#proposal">改善提案</a></li>
           <li><a href="#strengths">強み</a></li>
           <li><a href="#cases">導入事例</a></li>
           <li><a href="#company">会社概要</a></li>
           <li><a href="#contact">お問い合わせ</a></li>
         </ul>
       </nav>
+      <div class="footer__lang">
+        <span>Language:</span>
+        <a href="#" data-lang="ja" class="active">JP</a>
+        <a href="#" data-lang="en">EN</a>
+        <a href="#" data-lang="th" class="coming-soon" title="近日公開">TH</a>
+      </div>
       <p class="footer__copy">© 2025 pupuru asia. All rights reserved.</p>
     </div>
   </footer>

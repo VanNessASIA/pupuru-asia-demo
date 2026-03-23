@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects
+# EN/TH language pages (wire in when ready)
+# /en/*   /en/index.html  200
+# /th/*   /th/index.html  200
+
+# Catch-all: serve index
+/*   /index.html   200
