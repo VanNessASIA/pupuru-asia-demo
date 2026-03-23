@@ -25,6 +25,7 @@
           <li><a href="#proposal" class="nav__link">改善提案</a></li>
           <li><a href="#strengths" class="nav__link">強み</a></li>
           <li><a href="#cases" class="nav__link">導入事例</a></li>
+          <li><a href="#leadership" class="nav__link">代表メッセージ</a></li>
           <li><a href="#company" class="nav__link">会社概要</a></li>
           <li class="nav__lang-switch">
             <a href="#" class="nav__lang active" data-lang="ja">JP</a>
@@ -44,14 +45,7 @@
 
   <!-- ========== HERO ========== -->
   <section class="hero" id="home">
-    <div class="hero__bg">
-      <!--
-        ASSET SLOT: hero-bg.jpg
-        Place file at: /pupuru-assets/hero-bg.jpg (or .webp)
-        Recommended: high-res Asian cityscape or abstract network/connectivity photo (1920×1080+)
-        Fallback: CSS gradient is active below.
-        Wire-in: add style="background-image: url('../pupuru-assets/hero-bg.jpg')" to .hero__bg once file is ready.
-      -->
+    <div class="hero__bg" style="background-image: url('assets/pupuru-hero.png');">
       <div class="hero__overlay"></div>
     </div>
     <div class="container hero__content">
@@ -348,8 +342,7 @@
             Place file at: /pupuru-assets/case-retail.jpg
             Recommended: 600×400px, modern showroom or retail space
           -->
-          <div class="case-card__img case-card__img--retail">
-            <span class="case-card__img-label">📷 小売業イメージ（要差し替え）</span>
+          <div class="case-card__img case-card__img--retail" style="background-image: linear-gradient(rgba(10,15,30,0.12), rgba(10,15,30,0.28)), url('assets/pupuru-case-retail.png'); background-size: cover; background-position: center;">
           </div>
           <div class="case-card__body">
             <span class="case-card__tag case-card__tag--vr">VR</span>
@@ -418,6 +411,124 @@
     </div>
   </section>
 
+  <!-- ========== LEADERSHIP ========== -->
+  <section class="section leadership" id="leadership">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__eyebrow">Leadership</p>
+        <h2 class="section-header__title">代表メッセージ</h2>
+        <p class="section-header__sub">pupuru asiaが目指すアジアビジネスの未来</p>
+      </div>
+      <div class="leadership__card">
+        <div class="leadership__avatar-wrap">
+          <!--
+            ASSET SLOT: representative-photo.jpg
+            Place file at: /pupuru-assets/representative-photo.jpg
+            Recommended: Professional headshot, 400×400px minimum
+          -->
+          <div class="leadership__avatar-placeholder">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="40" cy="30" r="18" fill="#bfdbfe"/>
+              <ellipse cx="40" cy="65" rx="24" ry="16" fill="#bfdbfe"/>
+            </svg>
+          </div>
+          <div class="leadership__avatar-meta">
+            <p class="leadership__name">
+              代表取締役<br>
+              <strong>関 茂生</strong>
+            </p>
+          </div>
+        </div>
+        <blockquote class="leadership__quote">
+          <p>
+            アジアで事業を展開する日系企業にとって、通信インフラの安定と現地スタッフへの教育は、成長の根幹です。
+            pupuru asiaは「つながる」と「伝える」という２つの力でその課題を解決し、御社のアジア戦略を加速させます。
+          </p>
+          <p>
+            バンコクを拠点に、タイ・シンガポール・ベトナムをはじめアジア15カ国以上の現場で培った知見を、法人SIMからVR研修まで一気通貫でご提供しています。
+            日本語・英語・タイ語による三言語サポートで、本社と現地の橋渡しを担います。
+          </p>
+          <p>
+            ビジネスの現場でお困りのことがあれば、ぜひ一度ご相談ください。
+          </p>
+          <footer class="leadership__quote-footer">
+            <span>pupuru asia　代表取締役　関 茂生</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== THAI PREVIEW ========== -->
+  <section class="section thai-preview" id="thai-preview">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__eyebrow">🇹🇭 Thai Version Preview</p>
+        <h2 class="section-header__title">ภาษาไทย — ตัวอย่างหน้าเว็บไซต์</h2>
+        <p class="section-header__sub">ตัวอย่างหน้าภาษาไทยสำหรับการเปิดตัวในอนาคต · Sample of the Thai-language site rollout</p>
+      </div>
+      <div class="thai-preview__browser">
+        <div class="thai-preview__browser-bar">
+          <span class="thai-preview__dot thai-preview__dot--red"></span>
+          <span class="thai-preview__dot thai-preview__dot--yellow"></span>
+          <span class="thai-preview__dot thai-preview__dot--green"></span>
+          <span class="thai-preview__browser-url">pupuru-asia.com/th</span>
+        </div>
+        <div class="thai-preview__content">
+
+          <!-- Hero mock -->
+          <div class="thai-mock-hero">
+            <div class="thai-mock-hero__lang-bar">
+              <span>🇯🇵 JP</span><span class="thai-mock-hero__lang-sep">|</span><span>🇬🇧 EN</span><span class="thai-mock-hero__lang-sep">|</span><span class="thai-mock-hero__lang-active">🇹🇭 TH</span>
+            </div>
+            <p class="thai-mock-hero__eyebrow">Asia Business Solutions</p>
+            <h3 class="thai-mock-hero__title">เชื่อมต่อ ส่งต่อ<br>สู่ความสำเร็จในเอเชีย</h3>
+            <p class="thai-mock-hero__sub">
+              pupuru asia ให้บริการโซลูชันด้านการสื่อสารและ VR ครบวงจร<br>
+              เพื่อธุรกิจญี่ปุ่นในเอเชีย — ตั้งแต่ซิมองค์กรจนถึงการฝึกอบรมด้วย VR
+            </p>
+            <div class="thai-mock-hero__ctas">
+              <button class="thai-mock-btn thai-mock-btn--primary">ขอคำปรึกษาฟรี</button>
+              <button class="thai-mock-btn thai-mock-btn--outline">ดูบริการของเรา</button>
+            </div>
+          </div>
+
+          <!-- Services mini grid -->
+          <div class="thai-mock-services">
+            <p class="thai-mock-services__label">บริการของเรา</p>
+            <div class="thai-mock-services__grid">
+              <div class="thai-mock-service-card">
+                <span class="thai-mock-service-card__icon">📡</span>
+                <strong>โซลูชันการสื่อสาร</strong>
+                <p>ซิมองค์กร · Wi-Fi · สายเช่าอุตสาหกรรม สำหรับการดำเนินธุรกิจในเอเชียอย่างราบรื่น</p>
+              </div>
+              <div class="thai-mock-service-card">
+                <span class="thai-mock-service-card__icon">🥽</span>
+                <strong>โซลูชัน VR</strong>
+                <p>ฝึกอบรมด้วย VR · โชว์รูมเสมือน · สื่อนำเสนอองค์กร ระดับมืออาชีพ</p>
+              </div>
+              <div class="thai-mock-service-card">
+                <span class="thai-mock-service-card__icon">🌏</span>
+                <strong>ครอบคลุม 15+ ประเทศ</strong>
+                <p>รองรับภาษาไทย · ญี่ปุ่น · อังกฤษ พร้อมทีมสนับสนุนท้องถิ่น</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA strip -->
+          <div class="thai-mock-cta-strip">
+            <p>พร้อมขยายธุรกิจในเอเชียใต้และอาเซียน?</p>
+            <button class="thai-mock-btn thai-mock-btn--white">ติดต่อเราวันนี้ →</button>
+          </div>
+
+        </div>
+      </div>
+      <p class="thai-preview__disclaimer">
+        ※ このプレビューはデモ目的のサンプル翻訳です。正式リリース前にネイティブチェックを推奨します。
+      </p>
+    </div>
+  </section>
+
   <!-- ========== COMPANY ========== -->
   <section class="section company" id="company">
     <div class="container">
@@ -426,17 +537,25 @@
           <p class="section-header__eyebrow">Company</p>
           <h2 class="company__title">pupuru asiaについて</h2>
           <p class="company__desc">
-            pupuru asiaは、日系企業のアジア進出・現地運営を通信とテクノロジーで支援する専門企業です。アジア各国の通信インフラに精通し、VRを活用した先進的なビジネスソリューションを提供しています。
+            pupuru asiaは、日系企業のアジア進出・現地運営を<strong>通信とVR</strong>でワンストップ支援する専門企業です。バンコクを拠点に、アジア15カ国以上の通信インフラと現地規制に精通したチームが、法人SIM・専用線からVR研修コンテンツ制作まで一貫して対応します。日本語・英語・タイ語の3言語サポートにより、本社と現地拠点の橋渡し役として多くの日系企業に選ばれています。
           </p>
           <dl class="company__dl">
             <dt>会社名</dt>
-            <dd><!-- PLACEHOLDER: 正式社名 --></dd>
-            <dt>本社所在地</dt>
-            <dd><!-- PLACEHOLDER: 住所 --></dd>
+            <dd>pupuru asia<!-- ※ 正式法人名はご確認のうえ差し替えてください --></dd>
+            <dt>代表取締役</dt>
+            <dd>関 茂生</dd>
             <dt>設立</dt>
-            <dd><!-- PLACEHOLDER: 設立年月 --></dd>
+            <dd>2023年2月</dd>
+            <dt>資本金</dt>
+            <dd>400万THB</dd>
+            <dt>本社所在地</dt>
+            <dd>23rd Floor, Serm-mit Tower, Sukhumvit 21, Bangkok</dd>
+            <dt>対応エリア</dt>
+            <dd>タイ・日本・シンガポール・ベトナム・マレーシアほかアジア15カ国以上</dd>
             <dt>事業内容</dt>
-            <dd>通信ソリューション、VRビジネスソリューション、アジア法人向けITサポート</dd>
+            <dd>通信事業（法人スマホレンタル）、VRソリューション事業（安全体感VRトレーニング）</dd>
+            <dt>営業時間</dt>
+            <dd>9:30〜18:30</dd>
             <dt>対応言語</dt>
             <dd>日本語・English・ภาษาไทย（タイ語）</dd>
           </dl>
@@ -447,17 +566,47 @@
             Place file at: /pupuru-assets/asia-map.png
             Recommended: SVG/PNG illustration of Asia with coverage pins
           -->
-          <div class="company__map-placeholder">
-            <div class="map-mock">
-              <div class="map-mock__label">🗺 アジアカバレッジマップ（要差し替え）</div>
-              <div class="map-mock__pins">
-                <span class="pin pin--tokyo">🔵 東京</span>
-                <span class="pin pin--bangkok">🔵 バンコク</span>
-                <span class="pin pin--sg">🔵 シンガポール</span>
-                <span class="pin pin--hcm">🔵 ホーチミン</span>
-                <span class="pin pin--kl">🔵 クアラルンプール</span>
-              </div>
-            </div>
+          <div class="company__map-visual">
+            <!-- Simplified Asia coverage illustration (inline SVG) -->
+            <svg class="coverage-map" viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" aria-label="アジアカバレッジエリア">
+              <!-- Background -->
+              <rect width="420" height="340" rx="16" fill="#f0f4ff"/>
+              <!-- Sea area suggestion -->
+              <ellipse cx="260" cy="200" rx="160" ry="120" fill="#daeaff" opacity="0.5"/>
+              <!-- Coverage glow circles -->
+              <circle cx="340" cy="90" r="48" fill="rgba(0,100,255,0.07)"/>
+              <circle cx="260" cy="220" r="60" fill="rgba(0,100,255,0.07)"/>
+              <circle cx="200" cy="270" r="40" fill="rgba(0,100,255,0.07)"/>
+              <!-- Lines between hubs -->
+              <line x1="340" y1="90" x2="260" y2="220" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.55"/>
+              <line x1="260" y1="220" x2="200" y2="270" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.55"/>
+              <line x1="260" y1="220" x2="230" y2="240" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.55"/>
+              <line x1="260" y1="220" x2="290" y2="260" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.55"/>
+              <line x1="340" y1="90" x2="120" y2="100" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.35"/>
+              <!-- City pins -->
+              <!-- Tokyo -->
+              <circle cx="340" cy="90" r="9" fill="#0057FF" opacity="0.9"/>
+              <circle cx="340" cy="90" r="16" fill="#0057FF" opacity="0.15"/>
+              <text x="353" y="94" font-size="11" fill="#0057FF" font-family="Inter,sans-serif" font-weight="600">東京</text>
+              <!-- Bangkok (HQ) -->
+              <circle cx="260" cy="220" r="12" fill="#00C6FF" opacity="0.95"/>
+              <circle cx="260" cy="220" r="22" fill="#00C6FF" opacity="0.15"/>
+              <text x="276" y="225" font-size="11" fill="#0057FF" font-family="Inter,sans-serif" font-weight="700">バンコク ★</text>
+              <!-- Singapore -->
+              <circle cx="200" cy="270" r="9" fill="#0057FF" opacity="0.9"/>
+              <circle cx="200" cy="270" r="16" fill="#0057FF" opacity="0.15"/>
+              <text x="213" y="275" font-size="11" fill="#0057FF" font-family="Inter,sans-serif" font-weight="600">シンガポール</text>
+              <!-- HCMC -->
+              <circle cx="230" cy="240" r="7" fill="#3B82F6" opacity="0.85"/>
+              <text x="240" y="244" font-size="10" fill="#3B82F6" font-family="Inter,sans-serif">ホーチミン</text>
+              <!-- KL -->
+              <circle cx="290" cy="260" r="7" fill="#3B82F6" opacity="0.85"/>
+              <text x="300" y="264" font-size="10" fill="#3B82F6" font-family="Inter,sans-serif">KL</text>
+              <!-- Coverage label -->
+              <text x="20" y="30" font-size="12" fill="#0057FF" font-family="Inter,sans-serif" font-weight="700" opacity="0.7">Coverage Area</text>
+              <text x="20" y="47" font-size="10" fill="#64748b" font-family="Inter,sans-serif">アジア15カ国以上</text>
+            </svg>
+            <p class="coverage-map__note">※ 正式カバレッジマップは確定次第差し替えます</p>
           </div>
         </div>
       </div>
@@ -517,8 +666,9 @@
         <div class="contact__aside">
           <div class="contact__direct">
             <h3>直接のお問い合わせ</h3>
-            <p><!-- PLACEHOLDER: 電話番号 --><strong>TEL:</strong> 00-0000-0000</p>
-            <p><!-- PLACEHOLDER: メールアドレス --><strong>Email:</strong> info@pupuruasia.com</p>
+            <p><strong>TEL (JP):</strong> 065-520-2794</p>
+            <p><strong>TEL (TH):</strong> 061-018-1205</p>
+            <p><strong>Email:</strong> info@pupuruasia.com</p>
             <p class="contact__hours">受付時間：平日 9:00〜18:00（タイ時間 UTC+7）</p>
           </div>
           <div class="contact__sns">
