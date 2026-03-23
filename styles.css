@@ -849,7 +849,7 @@ ul { list-style: none; }
 }
 .nav__lang--soon {
   color: var(--clr-muted);
-  cursor: default;
+  cursor: pointer;
   position: relative;
 }
 .nav__lang--soon::after {
@@ -863,6 +863,14 @@ ul { list-style: none; }
   padding: 1px 3px;
   border-radius: 3px;
   white-space: nowrap;
+}
+/* TH is now fully active — remove coming-soon badge style override */
+[data-lang="th"].nav__lang {
+  cursor: pointer;
+}
+[data-lang="th"].nav__lang.active {
+  color: var(--clr-primary);
+  font-weight: 700;
 }
 
 /* ============================================================
@@ -1101,7 +1109,8 @@ ul { list-style: none; }
   transition: color var(--transition);
 }
 .footer__lang a:hover, .footer__lang a.active { color: var(--clr-white); }
-.footer__lang a.coming-soon { cursor: default; opacity: 0.4; }
+.footer__lang a.coming-soon { cursor: pointer; opacity: 0.55; }
+.footer__lang a[data-lang="th"] { opacity: 1; cursor: pointer; }
 
 /* Strength coming-soon note */
 .coming-soon {
