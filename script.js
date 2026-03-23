@@ -3,6 +3,67 @@
 // ── Translations ─────────────────────────────────────────────
 const translations = {
   ja: {
+    // Meta
+    'hamburger-aria': 'メニューを開く',
+    'stat-countries': 'カ国',
+    'stat-companies': '社+',
+    'trustbar-label': '導入企業（例）',
+    'services-multilang-note': '🌐 本サービスは <strong>日本語・英語・タイ語</strong> に対応。多言語サイトは順次公開予定です。',
+    // Proposal
+    'proposal-title': 'リニューアルの着眼点と改善提案',
+    'proposal-sub': '現行サイトを丁寧に拝見し、さらなる成長につながるポイントと、今回のリニューアルでご提案する改善内容をまとめました',
+    'proposal-badge': '改善ポイント',
+    'p1-title': '①VRの事業価値をより前面に打ち出す',
+    'p1-body': '現行サイトでは通信ソリューションが中心となっており、VRサービスの独自価値がさらに伝わるとB2Bの意思決定者にとってより訴求力が高まると考えます。',
+    'p1-before': '通信主体のページ構成。VRは下部に掲載。',
+    'p1-after': '通信とVRを対等な２カラムで並置。ヒーローコピーでも両方を明示。',
+    'p2-title': '②多言語対応でグローバルリーチを拡大する',
+    'p2-body': 'アジア各国の現地パートナーや外資系企業へのアプローチにあたり、英語・タイ語コンテンツをご用意することで、さらに幅広い顧客層へのリーチが期待できます。',
+    'p2-before': '日本語のみ。言語切替なし。',
+    'p2-after': 'ヘッダーにJP/TH切替を設置。英語ページは近日公開予定。',
+    'p3-title': '③導入事例に具体的な成果数値を加えてさらに説得力を高める',
+    'p3-body': '現行サイトの導入事例に業界別の数値成果を加えることで、訪問者が「自社にも活用できる」とイメージしやすくなり、問い合わせへの後押しになります。',
+    'p3-before': 'サービス紹介テキストのみ。業界・数値成果が不明瞭。',
+    'p3-after': '業界タグ・KPI数値・画像を組み合わせたカード型事例を掲載。',
+    'p4-title': '④スマートフォン体験をさらに快適に',
+    'p4-body': 'アジア市場ではスマートフォンが主要なアクセス手段です。モバイルの読みやすさとCTA誘導を強化することで、より多くの訪問者を問い合わせへとスムーズにご案内できます。',
+    'p4-before': 'PC基準のレイアウト。モバイルで文字が小さく、CTAが見えにくい。',
+    'p4-after': 'モバイルファーストのCSS設計。ハンバーガーメニュー・大型CTAボタンを実装。',
+    'proposal-rationale-title': 'なぜこの変更が必要か',
+    'proposal-rationale-body': 'pupuru asiaのターゲットは、アジアに拠点を持つ日系企業の事業責任者および現地IT担当者です。彼らは「通信とVRを一社でまかせられる信頼できるパートナー」を求めています。今回のリニューアルでは、<strong>2つのサービスを対等な柱として見せ</strong>、<strong>具体的な成果数値で信頼を獲得</strong>し、<strong>多言語対応で商圏を拡大</strong>することを狙います。Cloudflare Pagesへの静的デプロイにより、高速配信とグローバルCDNの恩恵も得られます。',
+    // Case tags
+    'case1-tag': '製造業',
+    'case2-tag': '小売・不動産',
+    'case3-tag': '商社・多拠点管理',
+    'case3-img-label': '📷 企業イメージ（要差し替え）',
+    'tag-comm': '通信',
+    // Multilang roadmap
+    'multilang-title': '多言語対応ロードマップ',
+    'multilang-desc': 'pupuru asiaはアジア全域のビジネスパートナーに向け、サイトの多言語展開を進めています。',
+    'multilang-jp-name': '日本語',
+    'multilang-live': '公開中',
+    'multilang-soon': '近日公開',
+    // Company values
+    'co-ceo-val': '関 茂生',
+    'co-founded-val': '2023年2月',
+    'co-capital-val': '400万THB',
+    'co-hours-val': '9:30〜18:30',
+    'co-area-val': 'タイ・日本・シンガポール・ベトナム・マレーシアほかアジア15カ国以上',
+    'co-business-val': '通信事業（法人スマホレンタル）、VRソリューション事業（安全体感VRトレーニング）',
+    'co-langs-val': '日本語・English・ภาษาไทย（タイ語）',
+    // Coverage map
+    'coverage-note': '※ 正式カバレッジマップは確定次第差し替えます',
+    // Form placeholders & select
+    'placeholder-company': '株式会社〇〇',
+    'placeholder-name': '山田 太郎',
+    'placeholder-message': 'ご相談内容をご記入ください…',
+    'select-placeholder': '選択してください',
+    'select-comm': '通信ソリューション',
+    'select-vr': 'VRソリューション',
+    'select-both': '両方',
+    'select-other': 'その他・未定',
+    // SNS
+    'sns-line': 'LINE公式アカウント',
     // Nav
     'nav-services':    'サービス',
     'nav-proposal':    '改善提案',
@@ -109,6 +170,67 @@ const translations = {
   },
 
   th: {
+    // Meta
+    'hamburger-aria': 'เปิดเมนู',
+    'stat-countries': 'ประเทศ',
+    'stat-companies': 'บริษัท+',
+    'trustbar-label': 'ลูกค้าที่ไว้วางใจเรา (ตัวอย่าง)',
+    'services-multilang-note': '🌐 บริการนี้รองรับ <strong>ภาษาไทย · ญี่ปุ่น · อังกฤษ</strong> — ไซต์หลายภาษาเปิดตัวทยอยตาม',
+    // Proposal
+    'proposal-title': 'ปัญหาปัจจุบันและข้อเสนอการปรับปรุง',
+    'proposal-sub': 'วิเคราะห์ไซต์ปัจจุบันเพื่อระบุปัญหาและแนวทางแก้ไขในการรีดีไซน์ครั้งนี้',
+    'proposal-badge': 'ปัญหาปัจจุบัน',
+    'p1-title': '① VR ดูเหมือนเป็นแค่ส่วนเสริมของการสื่อสาร',
+    'p1-body': 'ไซต์ปัจจุบันเน้นโซลูชันการสื่อสารเป็นหลัก ทำให้ VR ดูเป็นบริการรอง ผู้มีอำนาจตัดสินใจ B2B ยากที่จะเห็นคุณค่าของ VR ในฐานะธุรกิจอิสระ',
+    'p1-before': 'โครงสร้างหน้าเน้นการสื่อสาร VR อยู่ด้านล่าง',
+    'p1-after': 'วางการสื่อสารและ VR เคียงข้างกันอย่างเท่าเทียม ทั้งคู่ปรากฏใน Hero',
+    'p2-title': '② เนื้อหาภาษาญี่ปุ่นอย่างเดียว จำกัดการเข้าถึงลูกค้าต่างชาติ',
+    'p2-body': 'การขายให้พาร์ทเนอร์ในประเทศหรือบริษัทต่างชาติในเอเชีย ต้องการเนื้อหาภาษาอังกฤษและไทย ไซต์ปัจจุบันมีแค่ภาษาญี่ปุ่น',
+    'p2-before': 'ภาษาญี่ปุ่นอย่างเดียว ไม่มีตัวเลือกภาษา',
+    'p2-after': 'เพิ่มปุ่มสลับ JP/TH ที่ header ภาษาอังกฤษจะเปิดเร็วๆ นี้',
+    'p3-title': '③ กรณีศึกษายังคลุมเครือ ไม่ช่วย Conversion',
+    'p3-body': 'คำอธิบายส่วนใหญ่บอกว่า "นำไปใช้แล้ว" โดยขาดตัวเลขผลลัพธ์และกรณีแยกตามอุตสาหกรรม ผู้เยี่ยมชมรู้สึกว่าไม่เกี่ยวกับธุรกิจตัวเอง',
+    'p3-before': 'มีแค่ข้อความแนะนำบริการ อุตสาหกรรมและตัวเลขไม่ชัดเจน',
+    'p3-after': 'การ์ดกรณีศึกษาพร้อม tag อุตสาหกรรม ตัวเลข KPI และรูปภาพ',
+    'p4-title': '④ ประสบการณ์บนมือถือยังไม่ได้รับการ Optimize',
+    'p4-body': 'ในเอเชีย สมาร์ทโฟนคือช่องทางหลัก ไซต์ปัจจุบัน Responsive ไม่สมบูรณ์ ความอ่านง่ายและการนำทาง CTA บนมือถือยังต้องปรับปรุง',
+    'p4-before': 'เลย์เอาต์เน้น PC ตัวอักษรเล็กบนมือถือ CTA มองเห็นยาก',
+    'p4-after': 'ออกแบบ CSS Mobile-First เพิ่ม Hamburger Menu และปุ่ม CTA ขนาดใหญ่',
+    'proposal-rationale-title': 'ทำไมการเปลี่ยนแปลงนี้จึงจำเป็น',
+    'proposal-rationale-body': 'กลุ่มเป้าหมายของ pupuru asia คือผู้บริหารและ IT Manager ในพื้นที่ของบริษัทญี่ปุ่นที่มีสาขาในเอเชีย พวกเขาต้องการ "พาร์ทเนอร์ที่เชื่อถือได้ซึ่งรับผิดชอบทั้งการสื่อสารและ VR ในที่เดียว" การรีดีไซน์ครั้งนี้มุ่ง <strong>แสดงสองบริการในฐานะเสาหลักที่เท่าเทียม</strong> <strong>สร้างความไว้ใจด้วยตัวเลขผลลัพธ์ที่ชัดเจน</strong> และ <strong>ขยายตลาดด้วยการรองรับหลายภาษา</strong> การ Deploy บน Cloudflare Pages ยังให้ประโยชน์ด้านความเร็วและ Global CDN',
+    // Case tags
+    'case1-tag': 'การผลิต',
+    'case2-tag': 'ค้าปลีก · อสังหาริมทรัพย์',
+    'case3-tag': 'การค้า · บริหารหลายสาขา',
+    'case3-img-label': '📷 ภาพตัวอย่างบริษัท (รอเปลี่ยน)',
+    'tag-comm': 'การสื่อสาร',
+    // Multilang roadmap
+    'multilang-title': 'แผนการรองรับหลายภาษา',
+    'multilang-desc': 'pupuru asia กำลังขยายไซต์สู่หลายภาษาเพื่อให้บริการพาร์ทเนอร์ทางธุรกิจทั่วเอเชีย',
+    'multilang-jp-name': 'ภาษาญี่ปุ่น',
+    'multilang-live': 'เปิดให้บริการ',
+    'multilang-soon': 'เร็วๆ นี้',
+    // Company values
+    'co-ceo-val': 'Sek Shigeo',
+    'co-founded-val': 'กุมภาพันธ์ 2566',
+    'co-capital-val': '4,000,000 THB',
+    'co-hours-val': '9:30–18:30 น.',
+    'co-area-val': 'ไทย · ญี่ปุ่น · สิงคโปร์ · เวียดนาม · มาเลเซีย และ 15+ ประเทศในเอเชีย',
+    'co-business-val': 'ธุรกิจสื่อสาร (เช่า SIM องค์กร), ธุรกิจ VR (ฝึกอบรมความปลอดภัยด้วย VR)',
+    'co-langs-val': 'ภาษาไทย · English · 日本語',
+    // Coverage map
+    'coverage-note': '※ แผนที่ Coverage อย่างเป็นทางการจะอัปเดตเมื่อพร้อม',
+    // Form placeholders & select
+    'placeholder-company': 'ชื่อบริษัทของคุณ',
+    'placeholder-name': 'ชื่อ - นามสกุล',
+    'placeholder-message': 'กรุณาระบุรายละเอียดที่ต้องการสอบถาม…',
+    'select-placeholder': 'กรุณาเลือก',
+    'select-comm': 'โซลูชันการสื่อสาร',
+    'select-vr': 'โซลูชัน VR',
+    'select-both': 'ทั้งสองอย่าง',
+    'select-other': 'อื่นๆ / ยังไม่แน่ใจ',
+    // SNS
+    'sns-line': 'LINE Official Account',
     // Nav
     'nav-services':    'บริการ',
     'nav-proposal':    'ข้อเสนอ',
@@ -226,12 +348,58 @@ function applyLanguage(lang) {
 
   document.documentElement.lang = lang === 'th' ? 'th' : 'ja';
 
+  // Standard innerHTML replacements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (t[key] !== undefined) {
       el.innerHTML = t[key];
     }
   });
+
+  // aria-label attributes
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
+    const key = el.getAttribute('data-i18n-aria-label');
+    if (t[key] !== undefined) el.setAttribute('aria-label', t[key]);
+  });
+
+  // input/textarea placeholder attributes
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (t[key] !== undefined) el.setAttribute('placeholder', t[key]);
+  });
+
+  // select option text
+  document.querySelectorAll('[data-i18n-opt]').forEach(el => {
+    const key = el.getAttribute('data-i18n-opt');
+    if (t[key] !== undefined) el.textContent = t[key];
+  });
+
+  // SVG text elements (coverage map)
+  const svgMap = {
+    'svg-tokyo':          lang === 'th' ? 'โตเกียว' : '東京',
+    'svg-bangkok':        lang === 'th' ? 'กรุงเทพฯ ★' : 'バンコク ★',
+    'svg-singapore':      lang === 'th' ? 'สิงคโปร์' : 'シンガポール',
+    'svg-hcm':            lang === 'th' ? 'โฮจิมินห์' : 'ホーチミン',
+    'svg-coverage-label': lang === 'th' ? '15+ ประเทศในเอเชีย' : 'アジア15カ国以上',
+  };
+  Object.entries(svgMap).forEach(([id, text]) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  });
+
+  // Page title
+  document.title = lang === 'th'
+    ? 'pupuru asia | โซลูชันการสื่อสารและ VR ในเอเชีย'
+    : 'pupuru asia | アジアの通信・VRソリューション';
+
+  // Meta description
+  const metaDesc = document.getElementById('meta-desc');
+  if (metaDesc) {
+    metaDesc.setAttribute('content', lang === 'th'
+      ? 'pupuru asia คือพาร์ทเนอร์ B2B ด้านการสื่อสารและ VR ครบวงจรในเอเชีย แก้ปัญหาสื่อสารสำหรับสำนักงานต่างประเทศ'
+      : 'pupuru asiaはアジア全域で通信・VRソリューションを提供するB2Bパートナーです。海外拠点の通信課題をワンストップで解決します。'
+    );
+  }
 
   // Update active state on all lang toggles (header + footer)
   document.querySelectorAll('[data-lang]').forEach(btn => {
